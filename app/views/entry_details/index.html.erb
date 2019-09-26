@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="active-event-title">
+    <%= t('entry_details_page.table_heading.title') %>
+  </h1>
+
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>Date</th>
+      <th>Day</th>
+      <th>Purpose</th>
+      <th>Time In</th>
+      <th>Time Out</th>
+      <th>Time Used (H:M:S)</th>
+    </tr>
+    </thead>
+
+    <tbody>
+      <% @entry_details.each do |u| %>
+        <% present(u) do |entry_detail| %>
+          <tr>
+            <td><%= entry_detail.date %></td>
+            <td><%= entry_detail.day_of_the_month %></td>
+            <td><%= entry_detail.purpose %></td>
+            <td><%= entry_detail.time_in %></td>
+            <td><%= entry_detail.time_out %></td>
+            <td><%= entry_detail.total_time_used %></td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%== pagy_bootstrap_nav(@pagy).html_safe %>
+</div>

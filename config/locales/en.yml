@@ -1,0 +1,15 @@
+en:
+  clock_entry_page:
+    table_heading:
+      title: "Active Entries"
+    button_labels:
+      edit: "Edit"
+      delete: "Delete"
+      check_out: "Check Out"
+    messages:
+      edit: ""
+      delete: "Are you sure?"
+      check_out: "Proceed to Clock Out? Note that you will not have access to this event again once you click OK"
+  entry_details_page:
+    table_heading:
+      title: "Previous Entry Details"

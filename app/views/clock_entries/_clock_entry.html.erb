@@ -1,0 +1,16 @@
+<% present(clock_entry) do |clock_entry| %>
+  <tr id="remove-row" class="refresh">
+    <td><%= clock_entry.date %></td>
+    <td><%= clock_entry.day_of_the_month %></td>
+    <td><%= clock_entry.purpose %></td>
+    <td><%= clock_entry.time_in %></td>
+    <td><%= clock_entry.time_out %></td>
+    <td>
+      <div id="edit-clock-entry-<%= clock_entry.id %>">
+        <%= link_to t('index_page.button_labels.edit'), edit_clock_entry_path(clock_entry), remote: true, class: 'btn btn-primary btn-sm' %>
+      </div>
+    </td>
+    <td><%= link_to t('index_page.button_labels.delete'), clock_entry, method: :delete, data: { confirm: t('clock_entry_page.messages.delete'), remote: true }, class: 'delete btn btn-primary btn-sm' %></td>
+    <td><%= link_to t('index_page.button_labels.check_out'), clock_out_clock_entry_path(clock_entry), method: :post, data: { confirm: t('clock_entry_page.messages.check_out') }, class: 'btn btn-primary btn-sm' %></td>
+  </tr>
+<% end %>

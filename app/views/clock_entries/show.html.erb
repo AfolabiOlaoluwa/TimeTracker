@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @clock_entry.user_id %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @clock_entry.purpose %>
+</p>
+
+<p>
+  <strong>Time in:</strong>
+  <%= @clock_entry.time_in %>
+</p>
+
+<p>
+  <strong>Time out:</strong>
+  <%= @clock_entry.time_out %>
+</p>
+
+<%= link_to 'Edit', edit_clock_entry_path(@clock_entry) %> |
+<%= link_to 'Back', clock_entries_path %>

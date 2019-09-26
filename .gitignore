@@ -31,4 +31,5 @@
 yarn-debug.log*
 .yarn-integrity
 
+# Removed idea rubymine files
 .idea/

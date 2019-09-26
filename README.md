@@ -12,9 +12,8 @@
 
 I will advise you use `Chruby` to configure your environment with `Ruby and Rails Versions` I used for this solution before moving forward with the steps below. You can follow `https://medium.com/@hpux/using-chruby-as-the-default-ruby-version-manager-c11346e3cc` for that. When you are done, then you can proceed with the following steps:
 1. Clone the repo.
-2. Create `.env` file and paste the SPACE_ID and ACCESS_TOKEN
-3. Run `EDITOR=vim rails credentials:edit`. This creates `credentials.yml.enc` and `master.key` file for you inside `/config`. For more hint see https://gist.github.com/db0sch/19c321cbc727917bc0e12849a7565af9.
-4. Run `bundle install` from the root of the application.
+2. Run `EDITOR=vim rails credentials:edit`. This creates `credentials.yml.enc` and `master.key` file for you inside `/config`. For more hint see https://gist.github.com/db0sch/19c321cbc727917bc0e12849a7565af9.
+3. Run `bundle install` from the root of the application.
 
 
 CHALLENGE QUESTIONS

@@ -8,7 +8,6 @@ class CreateClockEntries < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-    # add_index :clock_entries, %i[purpose time_in time_out]
     add_index :clock_entries, :purpose
     add_index :clock_entries, :time_in
     add_index :clock_entries, :time_out

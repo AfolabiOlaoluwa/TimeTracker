@@ -26,6 +26,7 @@ class ClockEntriesController < ApplicationController
         format.js { redirect_to root_path, notice: 'Clock entry was successfully created.' }
         format.json { render :show, status: :created, location: @clock_entry }
       else
+        format.js { render :new }
         format.html { render :new }
         format.json { render json: @clock_entry.errors, status: :unprocessable_entity }
       end
@@ -39,6 +40,7 @@ class ClockEntriesController < ApplicationController
         format.html { redirect_to @clock_entry, notice: 'Clock entry was successfully updated.' }
         format.json { render :show, status: :ok, location: @clock_entry }
       else
+        format.js { render :edit }
         format.html { render :edit }
         format.json { render json: @clock_entry.errors, status: :unprocessable_entity }
       end

@@ -46,13 +46,13 @@ I used RDMS (Relational Database Management System) approach with lots of integr
 
 If I have`ANOTHER DAY`, I will implement a search system to search or filter previous entry details.
 
-If I have `ONE MONTH`, this a take a different turn all together. Let me touch of on what I will do differently on that:
+If I have `ONE MONTH`, this a take a different turn all together. Let me talk a little bit on what I will do differently on that:
 
 - Self-Referential Associations
     
     https://guides.rubyonrails.org/association_basics.html#self-joins 
     
-    This will allow me to store all clock_entries in a single database model, but be able to trace relationships such as between it's subordinates.
+    This will allow me to store all clock_entries in a single database model, but be able to trace relationships between it's subordinates.
  
 - Schema Design: 
 
@@ -66,7 +66,7 @@ If I have `ONE MONTH`, this a take a different turn all together. Let me touch o
     
     `Data Layer` will standalone. 
     
-    This allows me to have a solution that cut across multiple devises.
+    This allows me to have a solution that cut across multiple devices.
     
 - Exception Handling for production use.
 

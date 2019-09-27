@@ -15,6 +15,10 @@ I will advise you use `Chruby` to configure your environment with `Ruby and Rail
 2. Run `EDITOR=vim rails credentials:edit`. This creates `credentials.yml.enc` and `master.key` file for you inside `/config`. For more hint see https://gist.github.com/db0sch/19c321cbc727917bc0e12849a7565af9.
 3. Run `bundle install` from the root of the application.
 
+##### Running Tests
+
+From the root of the application just run `rspec`.
+
 
 CHALLENGE QUESTIONS
 ----
